@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Alex Chadwick · Index of works</title>
-<meta name="description" content="Alex Chadwick's index of works: apps, tools and experiments he builds, ships and keeps running.">
+<meta name="description" content="Alex Chadwick's index of works: apps, tools and experiments I build, ship and keep running.">
 <link rel="canonical" href="https://chadwicklabs.com/">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#f3eee4" media="(prefers-color-scheme: light)">
@@ -24,6 +24,7 @@
 <meta name="twitter:image" content="https://chadwicklabs.com/og.png">
 <meta name="twitter:image:alt" content="Alex Chadwick, index of works. Things I build, ship and keep running.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" href="fonts/fraunces-var.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="styles.css">
@@ -35,7 +36,7 @@
 <header class="masthead">
   <div class="wrap masthead__row">
     <a class="wordmark" href="./" aria-label="chadwicklabs.com home">chadwick<span>labs</span></a>
-    <p class="masthead__meta mono">Index of works <span aria-hidden="true">/</span> Nov 2026</p>
+    <p class="masthead__meta mono">Index of works</p>
     <button class="theme-toggle mono" type="button" hidden aria-label="Switch colour theme">
       <span class="theme-toggle__dot" aria-hidden="true"></span><span class="theme-toggle__label">Theme</span>
     </button>
@@ -45,25 +46,24 @@
 <main>
   <section class="hero wrap" aria-labelledby="hero-title">
     <div class="hero__main">
-    <p class="kicker mono reveal" style="--i:0">Lab notebook, vol. 1</p>
-    <h1 id="hero-title" class="hero__name reveal" style="--i:1">Alex <em>Chadwick</em></h1>
-    <p class="hero__line reveal" style="--i:2">Things I build, ship and keep running.</p>
-    <dl class="hero__legend mono reveal" style="--i:3">
-      <div><dt><span class="tag tag--live">Live</span></dt><dd>out in the world</dd></div>
-      <div><dt><span class="tag tag--dev">In development</span></dt><dd>not available yet</dd></div>
-    </dl>
+    <h1 id="hero-title" class="hero__name reveal" style="--i:0">Alex <em>Chadwick</em></h1>
+    <p class="hero__line reveal" style="--i:1">Things I build, ship and keep running.</p>
+    <ul class="hero__legend mono reveal" style="--i:2" role="list">
+      <li><span class="tag tag--live">Live</span></li>
+      <li><span class="tag tag--dev">In development</span></li>
+    </ul>
     </div>
-    <nav class="contents reveal" style="--i:4" aria-label="Contents">
+    <nav class="contents reveal" style="--i:3" aria-label="Contents">
       <p class="contents__title mono">Contents</p>
       <ol class="contents__list" role="list">
-        <li><a href="#w01"><span class="mono">01</span>Petition Checker</a></li>
-        <li><a href="#w02"><span class="mono">02</span>Talaria</a></li>
-        <li><a href="#w03"><span class="mono">03</span>VMBridge</a></li>
-        <li><a href="#w04"><span class="mono">04</span>Term Organize</a></li>
-        <li><a href="#w05"><span class="mono">05</span>Cairn</a></li>
-        <li><a href="#w06"><span class="mono">06</span>Autorouter</a></li>
-        <li data-pending="toontown"><a href="#w07"><span class="mono">07</span>Toontown</a></li>
-        <li><a href="#w08"><span class="mono">08</span>Clamshell</a></li>
+        <li><a href="#w01"><span class="mono">01</span> Petition Checker</a></li>
+        <li><a href="#w02"><span class="mono">02</span> Talaria</a></li>
+        <li><a href="#w03"><span class="mono">03</span> VMBridge</a></li>
+        <li><a href="#w04"><span class="mono">04</span> Term Organize</a></li>
+        <li><a href="#w05"><span class="mono">05</span> Cairn</a></li>
+        <li><a href="#w06"><span class="mono">06</span> Autorouter</a></li>
+        <li data-pending="toontown"><a href="#w07"><span class="mono">07</span> Toontown</a></li>
+        <li><a href="#w08"><span class="mono">08</span> Clamshell</a></li>
       </ol>
     </nav>
   </section>
@@ -75,7 +75,7 @@
     </div>
 
     <ol class="index" role="list">
-      <li class="entry reveal" style="--i:5">
+      <li class="entry reveal" style="--i:4">
         <article aria-labelledby="w01">
           <p class="entry__no mono" aria-hidden="true">01</p>
           <div class="entry__body">
@@ -83,7 +83,7 @@
               <h3 id="w01" class="entry__name">Petition Checker</h3>
               <p class="tag tag--live"><span class="sr">Status: </span>Live prototype</p>
             </header>
-            <p class="entry__pitch">Helps people in Indiana fill out and check a protection order petition (form PO-0100) before they file it, right in the browser.</p>
+            <p class="entry__pitch">Helps people in Indiana fill out and check a protection order petition (form <span class="nowrap">PO-0100</span>) before they file it, right in the browser.</p>
             <ul class="entry__meta mono" role="list">
               <li>Team project for Northeastern's AI for Impact course.</li>
               <li>Not official and not legal advice.</li>
@@ -95,7 +95,7 @@
         </article>
       </li>
 
-      <li class="entry reveal" style="--i:6">
+      <li class="entry reveal" style="--i:5">
         <article aria-labelledby="w02">
           <p class="entry__no mono" aria-hidden="true">02</p>
           <div class="entry__body">
@@ -103,9 +103,9 @@
               <h3 id="w02" class="entry__name">Talaria</h3>
               <p class="tag tag--live"><span class="sr">Status: </span>On the App Store</p>
             </header>
-            <p class="entry__pitch">A native iPhone and iPad client for the open-source Hermes Agent.</p>
+            <p class="entry__pitch">A native iPhone, iPad and Apple Watch client for the open-source Hermes Agent.</p>
             <ul class="entry__meta mono" role="list">
-              <li>On the App Store for iPhone, iPad and Apple Watch. Public beta on TestFlight.</li>
+              <li>Public beta on TestFlight.</li>
               <li>Unofficial; not affiliated with Nous Research.</li>
             </ul>
             <ul class="entry__links" role="list">
@@ -117,7 +117,7 @@
         </article>
       </li>
 
-      <li class="entry reveal" style="--i:7">
+      <li class="entry reveal" style="--i:6">
         <article aria-labelledby="w03">
           <p class="entry__no mono" aria-hidden="true">03</p>
           <div class="entry__body">
@@ -132,13 +132,12 @@
             </ul>
             <ul class="entry__links" role="list">
               <li><a href="https://vmbridge.app">vmbridge.app<span class="arrow" aria-hidden="true">↗</span></a></li>
-              <li><a href="https://x.com/VMBridgeApp/status/2121470963908813203">Launch post<span class="sr"> on X</span><span class="arrow" aria-hidden="true">↗</span></a></li>
             </ul>
           </div>
         </article>
       </li>
 
-      <li class="entry reveal" style="--i:8">
+      <li class="entry reveal" style="--i:7">
         <article aria-labelledby="w04">
           <p class="entry__no mono" aria-hidden="true">04</p>
           <div class="entry__body">
@@ -159,13 +158,13 @@
         </article>
       </li>
 
-      <li class="entry reveal" style="--i:9">
+      <li class="entry reveal" style="--i:8">
         <article aria-labelledby="w05">
           <p class="entry__no mono" aria-hidden="true">05</p>
           <div class="entry__body">
             <header class="entry__head">
               <h3 id="w05" class="entry__name">Cairn</h3>
-              <p class="tag tag--dev"><span class="sr">Status: </span>In development, not available yet</p>
+              <p class="tag tag--dev"><span class="sr">Status: </span>In development</p>
             </header>
             <p class="entry__pitch">A macOS menu bar app, with an iPhone companion, that shows how much of your AI tool usage limits you have left at a glance.</p>
             <ul class="entry__meta mono" role="list">
@@ -175,7 +174,7 @@
         </article>
       </li>
 
-      <li class="entry reveal" style="--i:10">
+      <li class="entry reveal" style="--i:9">
         <article aria-labelledby="w06">
           <p class="entry__no mono" aria-hidden="true">06</p>
           <div class="entry__body">
@@ -183,12 +182,12 @@
               <h3 id="w06" class="entry__name">Autorouter</h3>
               <p class="tag tag--dev"><span class="sr">Status: </span>In development</p>
             </header>
-            <p class="entry__pitch">A task router for AI agents. Bots drop jobs in one shared queue, and it sends each one to whichever coding model or local GPU is actually free, rerouting when one hits its limit or goes offline.</p>
+            <p class="entry__pitch">A task router for AI agents, in early development. Bots drop jobs into one shared queue; it is being built to send each to whichever coding model or local GPU is free and reroute when one hits its limit or goes offline.</p>
           </div>
         </article>
       </li>
 
-      <li class="entry reveal" style="--i:11" data-pending="toontown">
+      <li class="entry reveal" style="--i:10" data-pending="toontown">
         <article aria-labelledby="w07">
           <p class="entry__no mono" aria-hidden="true">07</p>
           <div class="entry__body">
@@ -204,7 +203,7 @@
         </article>
       </li>
 
-      <li class="entry reveal" style="--i:12">
+      <li class="entry reveal" style="--i:11">
         <article aria-labelledby="w08">
           <p class="entry__no mono" aria-hidden="true">08</p>
           <div class="entry__body">
@@ -217,16 +216,6 @@
         </article>
       </li>
     </ol>
-  </section>
-
-  <section class="running wrap" aria-labelledby="running-title">
-    <div class="section-head">
-      <h2 id="running-title" class="section-title">Running on <span class="nowrap">chadwicklabs.com</span></h2>
-      <p class="section-note mono">Live subdomains</p>
-    </div>
-    <ul class="running__list mono" role="list">
-      <li><span class="pulse" aria-hidden="true"></span><a href="https://po-checker.chadwicklabs.com">po-checker.chadwicklabs.com</a><span class="running__what">Petition Checker</span><span class="running__state">Live</span></li>
-    </ul>
   </section>
 </main>
 

@@ -18,9 +18,10 @@
     if (!btn) return;
     var label = btn.querySelector(".theme-toggle__label");
     function sync() {
-      var next = current() === "dark" ? "light" : "dark";
-      btn.setAttribute("aria-label", "Switch to " + next + " theme");
-      label.textContent = next === "dark" ? "Dark" : "Light";
+      var now = current();
+      btn.setAttribute("aria-pressed", now === "dark" ? "true" : "false");
+      btn.setAttribute("aria-label", "Colour theme, currently " + now);
+      label.textContent = now === "dark" ? "Dark" : "Light";
     }
     btn.hidden = false;
     sync();
