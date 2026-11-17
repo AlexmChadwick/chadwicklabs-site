@@ -17,11 +17,10 @@
     var btn = document.querySelector(".theme-toggle");
     if (!btn) return;
     var label = btn.querySelector(".theme-toggle__label");
+    btn.setAttribute("aria-label", "Dark theme");
+    if (label) label.textContent = "Dark theme";
     function sync() {
-      var now = current();
-      btn.setAttribute("aria-pressed", now === "dark" ? "true" : "false");
-      btn.setAttribute("aria-label", "Colour theme, currently " + now);
-      label.textContent = now === "dark" ? "Dark" : "Light";
+      btn.setAttribute("aria-pressed", current() === "dark" ? "true" : "false");
     }
     btn.hidden = false;
     sync();
