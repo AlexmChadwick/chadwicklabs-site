@@ -258,6 +258,11 @@ ol, ul { list-style: none; }
 .shot img { border: 1px solid var(--line); background: #000; }
 .shot--tall img { width: 200px; }
 .shot--native img { width: 340px; }
+.shot__stage { position: relative; }
+.shot--pair .shot__inset { position: absolute; right: 0.75rem; bottom: -1.5rem; width: 40%; max-width: 15rem; }
+.shot--pair .shot__inset img { width: 100%; height: auto; image-rendering: pixelated; border: 2px solid var(--link); box-shadow: 0 0.6rem 1.6rem rgb(0 0 0 / 0.55); }
+.shot--pair figcaption { margin-top: 2.2rem; max-width: 55%; }
+@media (max-width: 30rem) { .shot--pair .shot__inset { width: 46%; right: 0.5rem; } .shot--pair figcaption { max-width: 50%; margin-top: 1.2rem; } }
 .shot figcaption { margin-top: 0.7rem; font-size: 0.72rem; color: var(--fg-2); letter-spacing: 0.04em; }
 .shot figcaption span { color: var(--link); text-transform: uppercase; }
 .shot--empty, .shot:not(:has(img)) {
