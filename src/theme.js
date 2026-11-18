@@ -1,26 +1,22 @@
-// Optional theme toggle. The default follows prefers-color-scheme.
+// Optional theme toggle. Dark is the default; light is opt-in and remembered.
 (function () {
   var root = document.documentElement;
   var KEY = "theme";
   try {
-    var saved = localStorage.getItem(KEY);
-    if (saved === "light" || saved === "dark") root.setAttribute("data-theme", saved);
+    if (localStorage.getItem(KEY) === "light") root.setAttribute("data-theme", "light");
   } catch (e) {}
 
   function current() {
-    var t = root.getAttribute("data-theme");
-    if (t) return t;
-    return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    return root.getAttribute("data-theme") === "light" ? "light" : "dark";
   }
 
   document.addEventListener("DOMContentLoaded", function () {
     var btn = document.querySelector(".theme-toggle");
     if (!btn) return;
-    var label = btn.querySelector(".theme-toggle__label");
-    btn.setAttribute("aria-label", "Dark theme");
-    if (label) label.textContent = "Dark theme";
     function sync() {
       btn.setAttribute("aria-pressed", current() === "dark" ? "true" : "false");
+      var meta = document.querySelector('meta[name="theme-color"]');
+      if (meta) meta.setAttribute("content", current() === "dark" ? "#05060b" : "#f2f2ee");
     }
     btn.hidden = false;
     sync();

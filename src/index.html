@@ -1,71 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Alex Chadwick · Index of works</title>
+<title>Alex Chadwick · Builds and ships software</title>
 <meta name="description" content="Alex Chadwick's index of works: apps, tools and experiments I build, ship and keep running.">
 <link rel="canonical" href="https://chadwicklabs.com/">
-<meta name="color-scheme" content="light dark">
-<meta name="theme-color" content="#f3eee4" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#1b1a18" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#05060b">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://chadwicklabs.com/">
 <meta property="og:site_name" content="chadwicklabs.com">
-<meta property="og:title" content="Alex Chadwick · Index of works">
+<meta property="og:title" content="Alex Chadwick · Builds and ships software">
 <meta property="og:description" content="Things I build, ship and keep running.">
 <meta property="og:image" content="https://chadwicklabs.com/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Alex Chadwick, index of works. Things I build, ship and keep running.">
+<meta property="og:image:alt" content="Alex Chadwick in tall block capitals on a black and electric blue card. Things I build, ship and keep running.">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Alex Chadwick · Index of works">
+<meta name="twitter:title" content="Alex Chadwick · Builds and ships software">
 <meta name="twitter:description" content="Things I build, ship and keep running.">
 <meta name="twitter:image" content="https://chadwicklabs.com/og.png">
-<meta name="twitter:image:alt" content="Alex Chadwick, index of works. Things I build, ship and keep running.">
+<meta name="twitter:image:alt" content="Alex Chadwick in tall block capitals on a black and electric blue card. Things I build, ship and keep running.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="preload" href="fonts/fraunces-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/big-shoulders-display-var.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="styles.css">
 <script src="theme.js"></script>
 </head>
 <body>
 <a class="skip" href="#works">Skip to the works</a>
 
-<header class="masthead">
-  <div class="wrap masthead__row">
-    <a class="wordmark" href="./" aria-label="chadwicklabs.com home">chadwick<span>labs</span></a>
-    <p class="masthead__meta mono">Index of works</p>
+<header class="bar">
+  <div class="wrap bar__row">
+    <a class="mark px" href="./" aria-label="chadwicklabs.com home">chadwick<span>/</span>labs</a>
+    <nav class="bar__nav mono" aria-label="Sections">
+      <a href="#works">Works</a>
+      <a href="#history">History</a>
+    </nav>
     <button class="theme-toggle mono" type="button" hidden aria-label="Dark theme">
-      <span class="theme-toggle__dot" aria-hidden="true"></span><span class="theme-toggle__label">Dark theme</span>
+      <span class="theme-toggle__box" aria-hidden="true"></span><span class="theme-toggle__label">Dark theme</span>
     </button>
   </div>
 </header>
 
 <main>
   <section class="hero wrap" aria-labelledby="hero-title">
-    <div class="hero__main">
-    <h1 id="hero-title" class="hero__name reveal" style="--i:0">Alex <em>Chadwick</em></h1>
-    <p class="hero__line reveal" style="--i:1">Things I build, ship and keep running.</p>
-    <ul class="hero__legend mono reveal" style="--i:2" role="list" aria-label="Status key">
-      <li><span class="tag tag--live">Live</span></li>
-      <li><span class="tag tag--dev">In development</span></li>
-    </ul>
+    <p class="kicker px reveal" style="--i:0">Index of works<span class="cursor" aria-hidden="true"></span></p>
+    <h1 id="hero-title" class="hero__name reveal" style="--i:1"><span>Alex</span> <span>Chadwick</span></h1>
+    <div class="hero__foot">
+      <p class="hero__line reveal" style="--i:2">I design, build and ship software, then keep it running. Four projects are out in the world. Four more are on the bench.</p>
+      <div class="hero__cta reveal" style="--i:3">
+        <a class="btn btn--fill mono" href="#works">See the work<span aria-hidden="true"> ↓</span></a>
+        <a class="btn mono" href="#history">History<span aria-hidden="true"> ↓</span></a>
+      </div>
     </div>
-    <nav class="contents reveal" style="--i:3" aria-label="Contents">
-      <p class="contents__title mono">Contents</p>
-      <ol class="contents__list" role="list">
-        <li><a href="#w01"><span class="mono">01</span> Petition Checker</a></li>
-        <li><a href="#w02"><span class="mono">02</span> Talaria</a></li>
-        <li><a href="#w03"><span class="mono">03</span> VMBridge</a></li>
-        <li><a href="#w04"><span class="mono">04</span> Term Organize</a></li>
-        <li><a href="#w05"><span class="mono">05</span> Cairn</a></li>
-        <li><a href="#w06"><span class="mono">06</span> Autorouter</a></li>
-        <li data-pending="toontown"><a href="#w07"><span class="mono">07</span> Toontown</a></li>
-        <li><a href="#w08"><span class="mono">08</span> Clamshell</a></li>
-      </ol>
-    </nav>
+    <dl class="readout mono reveal" style="--i:4">
+      <div><dt>Shipped</dt><dd>04</dd></div>
+      <div><dt>In development</dt><dd>04</dd></div>
+      <div><dt>Northeastern</dt><dd>CS ’27</dd></div>
+    </dl>
+  </section>
+
+  <section class="slab" aria-labelledby="slab-title">
+    <pre class="slab__field" aria-hidden="true">::++++++++++++++++:::::::::.........                      .................:::::.....................................:::::::::::::::::::::::...........................:::::::::::::::::::::::::::.........
++++++++++++++++++++++:::::::.........               ..............::::::::::::::::...............................:::::::::::::::::::::::::::::..............::::::::::::::::++++++++++++:::::::::........
++************++++++++:::::::..............................::::::::::::::::::::::::............................:::::::::::::::::::::::::::::::::::::::::::::::::::+++++++++++++++++++++++++::::::.......
+**************++++++++:::::::.....................:::::::::::::::::::::::::::::::..........................:::::::::::::::::::::::::::::::::::::::::::::::++++++++++***************+++++++:::::......
+**************+++++++:::::::::...........:::::::::::::++++++++++++++++::::::::::::......................:::::::::::::::::::::::::::::::::::::::::::::++++++++***********************+++++:::::......
+**************+++++++::::::::::::::::::::::::+++++++++++++++++++++++++++::::::::::::...............:::::::::::::::::::::::::::........:::::::::::+++++++*******##############*******++++:::::.......           ...
+************++++++++::::::::::::::::::+++++++++++**************++++++++++:::::::::::::::::::::::::::::::::::::::::::::.................::::::::+++++******###################******++++::::::....................:
+**********+++++++++:::::::::::::++++++++++***********************++++++++++++::::::::::::::::::::::::::::::::::::.....................::::::+++++*****########%%%%%%%#######*****+++++::::::.............:::::::++
+*******++++++++++:::::::::+++++++++++************#####**************+++++++++++++++++++++++++++++++::::::::::::......................:::::+++++****#######%%%%%%%%%%######*****+++++::::::::::::::::::::++++++****
+***+++++++++++::::::::++++++++++**********###############*********************+++++++++++++++++++++++::::::::...........  ..........::::++++*****######%%%%%%%%%%%######*****+++++:::::::::::::::++++++*****######
++++++++++++:::::::+++++++++++*********#####################************************************+++++++::::::........      ........::::++++****######%%%%%%%%%%######*****+++++++:::::::::::++++++*****####%%%%%%%%
+++++++++::::::++++++++++++**********#######################################################******+++++:::::.......      .......::::++++*****#######%%%%%%#######*****++++++::::::::::::+++++****####%%%%%@@@@@@@@@
++++++::::++++++++++++++***************##############################%%%%%%%%%%%%%%%%%%%%#####****++++:::::..................::::+++++****#########%#########*****+++++::::::::::::::++++****###%%%%@@@@@@@@@@@@@@@
++++++++++++++++++++***********************************#########%%%%%%%@@@@@@@@@@@@@@%%%%%%####***++++::::...............:::::++++****###################****+++++:::::::::::::::::++++***###%%%@@@@@@@@@@@@@@@@@@@
++++++++++++++*****************************************######%%%%%@@@@@@@@@@@@@@@@@@@@@%%%%####***++++:::::.........:::::+++++****######%%%%%%%######****++++:::::...........::::+++***##%%%@@@@@@@@@@@@@@@@@@@@@@@
++++++*************************++++++++++++++++++******####%%%%@@@@@@@@@@@@@@@@@@@@@@@@@%%%###***++++:::::::::::::::+++++****#####%%%%%%%%%%%#####****+++::::...............:::+++**###%%@@@@@@@@@@@@@@@@@@@@@@@@@@</pre>
+    <div class="wrap slab__inner">
+      <h2 id="slab-title" class="slab__title">Built. Shipped. Kept running.</h2>
+      <p class="slab__note mono">The App Store, the Mac, the web and the command line.</p>
+    </div>
   </section>
 
   <section id="works" class="works wrap" aria-labelledby="works-title" tabindex="-1">
@@ -75,13 +93,13 @@
     </div>
 
     <ol class="index" role="list">
-      <li class="entry reveal" style="--i:4">
+      <li class="entry reveal" style="--i:5">
         <article aria-labelledby="w01">
-          <p class="entry__no mono" aria-hidden="true">01</p>
           <div class="entry__body">
             <header class="entry__head">
+              <p class="entry__no mono" aria-hidden="true">[01]</p>
+              <p class="tag tag--live mono"><span class="sr">Status: </span>Live prototype</p>
               <h3 id="w01" class="entry__name">Petition Checker</h3>
-              <p class="tag tag--live"><span class="sr">Status: </span>Live prototype</p>
             </header>
             <p class="entry__pitch">Helps people in Indiana fill out and check a protection order petition (form <span class="nowrap">PO-0100</span>) before they file it, right in the browser.</p>
             <ul class="entry__meta mono" role="list">
@@ -92,16 +110,23 @@
               <li><a href="https://po-checker.chadwicklabs.com">po-checker.chadwicklabs.com<span class="arrow" aria-hidden="true">↗</span></a></li>
             </ul>
           </div>
+          <figure class="shot shot--wide">
+            <picture>
+              <source type="image/webp" srcset="img/petition-checker-640.webp 640w, img/petition-checker-1200.webp 1200w" sizes="(min-width: 60rem) 38rem, 92vw">
+              <img src="img/petition-checker.png" width="640" height="400" loading="lazy" decoding="async" alt="Petition Checker's start page: the heading Check your petition before you file it, with two ways to begin, upload a filled PO-0100 or answer the questions step by step.">
+            </picture>
+            <figcaption class="mono"><span aria-hidden="true">Fig. 01 </span>The live site, nothing filled in.</figcaption>
+          </figure>
         </article>
       </li>
 
-      <li class="entry reveal" style="--i:5">
+      <li class="entry reveal" style="--i:6">
         <article aria-labelledby="w02">
-          <p class="entry__no mono" aria-hidden="true">02</p>
           <div class="entry__body">
             <header class="entry__head">
+              <p class="entry__no mono" aria-hidden="true">[02]</p>
+              <p class="tag tag--live mono"><span class="sr">Status: </span>On the App Store</p>
               <h3 id="w02" class="entry__name">Talaria</h3>
-              <p class="tag tag--live"><span class="sr">Status: </span>On the App Store</p>
             </header>
             <p class="entry__pitch">A native iPhone, iPad and Apple Watch client for the open-source Hermes Agent.</p>
             <ul class="entry__meta mono" role="list">
@@ -114,16 +139,23 @@
               <li><a href="https://x.com/TalariaAgent">X<span class="sr"> (Talaria on X)</span><span class="arrow" aria-hidden="true">↗</span></a></li>
             </ul>
           </div>
+          <figure class="shot shot--tall">
+            <picture>
+              <source type="image/webp" srcset="img/talaria-220.webp 220w, img/talaria-440.webp 440w" sizes="200px">
+              <img src="img/talaria.png" width="220" height="478" loading="lazy" decoding="async" alt="Talaria on iPhone, showing a conversation with Hermes Agent.">
+            </picture>
+            <figcaption class="mono"><span aria-hidden="true">Fig. 02 </span>From the App Store listing.</figcaption>
+          </figure>
         </article>
       </li>
 
-      <li class="entry reveal" style="--i:6">
+      <li class="entry reveal" style="--i:7">
         <article aria-labelledby="w03">
-          <p class="entry__no mono" aria-hidden="true">03</p>
           <div class="entry__body">
             <header class="entry__head">
+              <p class="entry__no mono" aria-hidden="true">[03]</p>
+              <p class="tag tag--live mono"><span class="sr">Status: </span>Shipped, v1.0.2 for macOS</p>
               <h3 id="w03" class="entry__name">VMBridge <span class="entry__sub">for Parallels Desktop</span></h3>
-              <p class="tag tag--live"><span class="sr">Status: </span>Shipped, v1.0.2 for macOS</p>
             </header>
             <p class="entry__pitch">Lets Claude Code, Codex, or Cursor drive a Parallels Desktop VM (screen, keyboard, mouse, commands, files) while your Mac desktop stays out of it.</p>
             <ul class="entry__meta mono" role="list">
@@ -134,16 +166,23 @@
               <li><a href="https://vmbridge.app">vmbridge.app<span class="arrow" aria-hidden="true">↗</span></a></li>
             </ul>
           </div>
+          <figure class="shot shot--wide">
+            <picture>
+              <source type="image/webp" srcset="img/vmbridge-640.webp 640w, img/vmbridge-1200.webp 1200w" sizes="(min-width: 60rem) 38rem, 92vw">
+              <img src="img/vmbridge.png" width="640" height="400" loading="lazy" decoding="async" alt="The vmbridge.app home page in dark mode, headed Let your AI agent drive Parallels Desktop VMs, with Download DMG and Buy buttons.">
+            </picture>
+            <figcaption class="mono"><span aria-hidden="true">Fig. 03 </span>vmbridge.app</figcaption>
+          </figure>
         </article>
       </li>
 
-      <li class="entry reveal" style="--i:7">
+      <li class="entry reveal" style="--i:8">
         <article aria-labelledby="w04">
-          <p class="entry__no mono" aria-hidden="true">04</p>
           <div class="entry__body">
             <header class="entry__head">
+              <p class="entry__no mono" aria-hidden="true">[04]</p>
+              <p class="tag tag--live mono"><span class="sr">Status: </span>Mac app released, v1.1.3</p>
               <h3 id="w04" class="entry__name">Term Organize</h3>
-              <p class="tag tag--live"><span class="sr">Status: </span>Mac app released, v1.1.3</p>
             </header>
             <p class="entry__pitch">A free, open-source course planner for Northeastern students, with degree plans and schedule building on Mac, iPhone, web, Android, Linux and Windows.</p>
             <ul class="entry__meta mono" role="list">
@@ -155,74 +194,146 @@
               <li><a href="https://github.com/AlexmChadwick/Northeastern-Term-Organize">Source (AGPL-3.0)<span class="arrow" aria-hidden="true">↗</span></a></li>
             </ul>
           </div>
+          <div class="shot shot--empty" aria-hidden="true"><span class="px">No capture yet</span></div>
         </article>
       </li>
 
-      <li class="entry reveal" style="--i:8">
+      <li class="entry reveal" style="--i:9">
         <article aria-labelledby="w05">
-          <p class="entry__no mono" aria-hidden="true">05</p>
           <div class="entry__body">
             <header class="entry__head">
+              <p class="entry__no mono" aria-hidden="true">[05]</p>
+              <p class="tag tag--dev mono"><span class="sr">Status: </span>In development</p>
               <h3 id="w05" class="entry__name">Cairn</h3>
-              <p class="tag tag--dev"><span class="sr">Status: </span>In development</p>
             </header>
             <p class="entry__pitch">A macOS menu bar app, with an iPhone companion, that shows how much of your AI tool usage limits you have left at a glance.</p>
             <ul class="entry__meta mono" role="list">
               <li>Built on the open-source OpenUsage project by Robin Ebers (MIT).</li>
             </ul>
           </div>
+          <figure class="shot shot--native">
+            <picture>
+              <source type="image/webp" srcset="img/cairn-340.webp">
+              <img src="img/cairn.png" width="340" height="344" loading="lazy" decoding="async" alt="Cairn's menu bar popover showing Claude and ChatGPT session and weekly usage bars, with sample data.">
+            </picture>
+            <figcaption class="mono"><span aria-hidden="true">Fig. 05 </span>Sample data.</figcaption>
+          </figure>
         </article>
       </li>
 
-      <li class="entry reveal" style="--i:9">
+      <li class="entry reveal" style="--i:10">
         <article aria-labelledby="w06">
-          <p class="entry__no mono" aria-hidden="true">06</p>
           <div class="entry__body">
             <header class="entry__head">
+              <p class="entry__no mono" aria-hidden="true">[06]</p>
+              <p class="tag tag--dev mono"><span class="sr">Status: </span>In development</p>
               <h3 id="w06" class="entry__name">Autorouter</h3>
-              <p class="tag tag--dev"><span class="sr">Status: </span>In development</p>
             </header>
             <p class="entry__pitch">A task router for AI agents, in early development. Bots drop jobs into one shared queue; it is being built to send each to whichever coding model or local GPU is free and reroute when one hits its limit or goes offline.</p>
           </div>
+          <figure class="shot shot--wide">
+            <picture>
+              <source type="image/webp" srcset="img/autorouter-560.webp 560w, img/autorouter-928.webp 928w" sizes="(min-width: 60rem) 38rem, 92vw">
+              <img src="img/autorouter.png" width="560" height="346" loading="lazy" decoding="async" alt="Autorouter command-line help showing submit, status, cancel, list and providers commands">
+            </picture>
+            <figcaption class="mono"><span aria-hidden="true">Fig. 06 </span>Command-line help.</figcaption>
+          </figure>
         </article>
       </li>
 
-      <li class="entry reveal" style="--i:10" data-pending="toontown">
+      <li class="entry reveal" style="--i:11" data-pending="toontown">
         <article aria-labelledby="w07">
-          <p class="entry__no mono" aria-hidden="true">07</p>
           <div class="entry__body">
             <header class="entry__head">
+              <p class="entry__no mono" aria-hidden="true">[07]</p>
+              <p class="tag tag--dev mono"><span class="sr">Status: </span>In development</p>
               <h3 id="w07" class="entry__name">Toontown</h3>
-              <p class="tag tag--dev"><span class="sr">Status: </span>In development</p>
             </header>
             <p class="entry__pitch">A cross-platform Toontown fork built on Open Toontown, targeting 3DS, iPhone and iPad, Android, Mac, Windows and the web.</p>
             <ul class="entry__meta mono" role="list">
               <li>In development. Builds in testing on several targets, nothing released yet.</li>
             </ul>
           </div>
+          <figure class="shot shot--wide">
+            <picture>
+              <source type="image/webp" srcset="img/toontown-800.webp 800w, img/toontown-1600.webp 1600w" sizes="(min-width: 60rem) 38rem, 92vw">
+              <img src="img/toontown.png" width="800" height="192" loading="lazy" decoding="async" alt="Toontown street screen with mini-map, playground chips and tab bar, shown on 3DS and iPhone side by side.">
+            </picture>
+            <figcaption class="mono"><span aria-hidden="true">Fig. 07 </span>In-development capture.</figcaption>
+          </figure>
         </article>
       </li>
 
-      <li class="entry reveal" style="--i:11">
+      <li class="entry reveal" style="--i:12">
         <article aria-labelledby="w08">
-          <p class="entry__no mono" aria-hidden="true">08</p>
           <div class="entry__body">
             <header class="entry__head">
+              <p class="entry__no mono" aria-hidden="true">[08]</p>
+              <p class="tag tag--dev mono"><span class="sr">Status: </span>In development</p>
               <h3 id="w08" class="entry__name">Clamshell</h3>
-              <p class="tag tag--dev"><span class="sr">Status: </span>In development</p>
             </header>
             <p class="entry__pitch">Clamshell streams 3DS games from the Azahar emulator to your iPhone over local Wi-Fi, and sends touch and controller input back.</p>
           </div>
+          <figure class="shot shot--wide">
+            <picture>
+              <source type="image/webp" srcset="img/clamshell-640.webp 640w, img/clamshell-1200.webp 1200w" sizes="(min-width: 60rem) 38rem, 92vw">
+              <img src="img/clamshell.png" width="640" height="294" loading="lazy" decoding="async" alt="Clamshell on iPhone in landscape, with the 3DS top screen in the middle, the touch screen on the right, and on-screen controls around them.">
+            </picture>
+            <figcaption class="mono"><span aria-hidden="true">Fig. 08 </span>In-development UI.</figcaption>
+          </figure>
         </article>
       </li>
     </ol>
   </section>
+
+  <section id="history" class="history wrap" aria-labelledby="history-title" tabindex="-1">
+    <div class="section-head">
+      <h2 id="history-title" class="section-title">History</h2>
+      <p class="section-note mono">Work and school</p>
+    </div>
+    <ol class="log" role="list">
+      <li class="log__row">
+        <p class="log__when mono">2026 <span aria-hidden="true">→</span><span class="sr">to</span> now</p>
+        <div class="log__what">
+          <h3 class="log__role">Product Management Intern</h3>
+          <p class="log__org mono">Financial services company</p>
+          <p class="log__line">Strategy and roadmap work on payments and agentic commerce.</p>
+        </div>
+      </li>
+      <li class="log__row">
+        <p class="log__when mono">2026</p>
+        <div class="log__what">
+          <h3 class="log__role">Generative AI Engineer Intern</h3>
+          <p class="log__org mono">Financial services company</p>
+          <p class="log__line">Proposed and built features for an internal generative AI service.</p>
+        </div>
+      </li>
+      <li class="log__row">
+        <p class="log__when mono">2026</p>
+        <div class="log__what">
+          <h3 class="log__role">Treasury Applications Engineer Intern</h3>
+          <p class="log__org mono">Financial services company</p>
+          <p class="log__line">Modernized internal automation tools in React.</p>
+        </div>
+      </li>
+      <li class="log__row">
+        <p class="log__when mono">2024 <span aria-hidden="true">→</span><span class="sr">to</span> 2027</p>
+        <div class="log__what">
+          <h3 class="log__role">B.S. Computer Science</h3>
+          <p class="log__org mono">Northeastern University</p>
+          <p class="log__line">Concentration in human centered computing.</p>
+        </div>
+      </li>
+    </ol>
+    <p class="toolkit mono"><span class="toolkit__label">Toolkit</span> Java · Kotlin · React · C · C# · SQL · Figma · Claude Code · Certified AI-Empowered SAFe Scrum Master</p>
+  </section>
+
 </main>
 
 <footer class="colophon">
   <div class="wrap colophon__grid mono">
-    <p>© 2026 Alex Chadwick</p>
-    <p>Set in Fraunces, Inter Tight and JetBrains Mono, all under the SIL Open Font License. No trackers, no cookies.</p>
+    <p>© 2026 Alex Chadwick · <a href="https://github.com/AlexmChadwick">GitHub<span class="arrow" aria-hidden="true">↗</span></a></p>
+    <p>Set in Big Shoulders Display, Inter Tight, JetBrains Mono and Silkscreen, all under the SIL Open Font License. No trackers, no cookies.</p>
   </div>
 </footer>
 </body>

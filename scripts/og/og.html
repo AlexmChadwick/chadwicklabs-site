@@ -4,28 +4,24 @@
 <meta charset="utf-8">
 <title>OG card</title>
 <style>
-@font-face { font-family: "Fraunces"; src: url("../../src/fonts/fraunces-var.woff2") format("woff2"); font-weight: 300 700; }
-@font-face { font-family: "Fraunces"; src: url("../../src/fonts/fraunces-italic-var.woff2") format("woff2"); font-weight: 300 500; font-style: italic; }
+@font-face { font-family: "Big Shoulders Display"; src: url("../../src/fonts/big-shoulders-display-var.woff2") format("woff2"); font-weight: 100 900; }
 @font-face { font-family: "JetBrains Mono"; src: url("../../src/fonts/jetbrains-mono-var.woff2") format("woff2"); font-weight: 400 700; }
+@font-face { font-family: "Silkscreen"; src: url("../../src/fonts/silkscreen.woff2") format("woff2"); }
 * { margin: 0; box-sizing: border-box; }
-html, body { width: 1200px; height: 630px; }
-body {
-  background: #f3eee4;
-  background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 41px, rgba(26,24,20,.07) 41px, rgba(26,24,20,.07) 42px);
-  color: #1a1814; font-family: "Fraunces", serif;
-  padding: 64px 80px; display: flex; flex-direction: column; position: relative;
-}
-.top { display: flex; justify-content: space-between; font: 500 22px "JetBrains Mono", monospace; letter-spacing: .1em; text-transform: uppercase; border-bottom: 2px solid #1a1814; padding-bottom: 18px; }
-.top b { color: #a5350b; font-weight: 500; }
-h1 { font-weight: 340; font-size: 168px; line-height: .86; letter-spacing: -.035em; margin-top: 54px; font-variation-settings: "opsz" 144; }
-h1 em { display: block; font-style: italic; font-weight: 300; padding-left: 110px; }
-h1 em::after { content: "."; color: #e2501c; font-style: normal; }
-p { margin-top: auto; font-size: 38px; color: #4f4a42; font-variation-settings: "opsz" 36; }
+html, body { width: 1200px; height: 630px; overflow: hidden; }
+body { background: #05060b; color: #eef0f7; display: grid; grid-template-rows: 1fr 150px; }
+.top { padding: 56px 72px 0; position: relative;
+  background-image: radial-gradient(rgba(154,163,255,.18) 1px, transparent 1.2px); background-size: 6px 6px; }
+.k { font: 22px "Silkscreen", monospace; text-transform: uppercase; color: #9aa3ff; display: flex; gap: 14px; align-items: center; }
+.k::before { content: ""; width: 14px; height: 14px; background: currentColor; }
+h1 { font: 800 200px/.8 "Big Shoulders Display", sans-serif; text-transform: uppercase; margin-top: 30px; }
+h1 span { display: block; color: transparent; -webkit-text-stroke: 3px #eef0f7; }
+.slab { background: #1b26f2; color: #fff; padding: 0 72px; display: flex; align-items: center; justify-content: space-between; font: 500 30px "JetBrains Mono", monospace; }
+.slab b { font: 22px "Silkscreen", monospace; text-transform: uppercase; }
 </style>
 </head>
 <body>
-<div class="top"><span>chadwicklabs.com</span><b>Index of works</b></div>
-<h1>Alex <em>Chadwick</em></h1>
-<p>Things I build, ship and keep running.</p>
+<div class="top"><p class="k">chadwick/labs</p><h1>Alex <span>Chadwick</span></h1></div>
+<div class="slab"><p>Things I build, ship and keep running.</p><b>chadwicklabs.com</b></div>
 </body>
 </html>

@@ -16,12 +16,12 @@ await page.evaluate(() => document.fonts.ready);
 await page.screenshot({ path: path.join(root, "src/og.png") });
 
 await page.setViewportSize({ width: 180, height: 180 });
-await page.setContent(`<style>html,body{margin:0;background:#1a1814}</style><img src="${pathToFileURL(path.join(root, "src/favicon.svg")).href}" width="180" height="180" style="display:block">`);
+await page.setContent(`<style>html,body{margin:0;background:#05060b}</style><img src="${pathToFileURL(path.join(root, "src/favicon.svg")).href}" width="180" height="180" style="display:block">`);
 await page.waitForTimeout(200);
 await page.screenshot({ path: path.join(root, "src/apple-touch-icon.png") });
 
 await page.setViewportSize({ width: 32, height: 32 });
-await page.setContent(`<style>html,body{margin:0;background:#1a1814}</style><img src="${pathToFileURL(path.join(root, "src/favicon.svg")).href}" width="32" height="32" style="display:block">`);
+await page.setContent(`<style>html,body{margin:0;background:#05060b}</style><img src="${pathToFileURL(path.join(root, "src/favicon.svg")).href}" width="32" height="32" style="display:block">`);
 await page.waitForTimeout(200);
 await page.screenshot({ path: path.join(root, "src/favicon-32.png") });
 await browser.close();

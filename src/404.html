@@ -1,50 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Page not found · Alex Chadwick</title>
 <meta name="description" content="That URL is not on chadwicklabs.com.">
 <meta name="robots" content="noindex">
-<meta name="color-scheme" content="light dark">
-<meta name="theme-color" content="#f3eee4" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#1b1a18" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#05060b">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="preload" href="/fonts/fraunces-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/big-shoulders-display-var.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/styles.css">
 <script src="/theme.js"></script>
 </head>
 <body>
 <a class="skip" href="#missing">Skip to the message</a>
 
-<header class="masthead">
-  <div class="wrap masthead__row">
-    <a class="wordmark" href="/" aria-label="chadwicklabs.com home">chadwick<span>labs</span></a>
-    <p class="masthead__meta mono">Index of works</p>
+<header class="bar">
+  <div class="wrap bar__row">
+    <a class="mark px" href="/" aria-label="chadwicklabs.com home">chadwick<span>/</span>labs</a>
+    <nav class="bar__nav mono" aria-label="Sections">
+      <a href="/#works">Works</a>
+      <a href="/#history">History</a>
+    </nav>
     <button class="theme-toggle mono" type="button" hidden aria-label="Dark theme">
-      <span class="theme-toggle__dot" aria-hidden="true"></span><span class="theme-toggle__label">Dark theme</span>
+      <span class="theme-toggle__box" aria-hidden="true"></span><span class="theme-toggle__label">Dark theme</span>
     </button>
   </div>
 </header>
 
 <main>
-  <section class="hero wrap" aria-labelledby="missing">
-    <div class="hero__main">
-      <h1 id="missing" class="section-title" tabindex="-1">Page not found</h1>
-      <p class="hero__line">That URL is not on chadwicklabs.com.</p>
-      <ul class="entry__links" role="list">
-        <li><a href="/">Back to the index of works</a></li>
-      </ul>
-    </div>
+  <section class="lost wrap" aria-labelledby="missing">
+    <p class="kicker px">Error<span class="cursor" aria-hidden="true"></span></p>
+    <h1 id="missing" tabindex="-1">404</h1>
+    <p class="lost__line">That URL is not on chadwicklabs.com.</p>
+    <a class="btn btn--fill mono" href="/">Back to the index<span aria-hidden="true"> →</span></a>
   </section>
 </main>
 
 <footer class="colophon">
   <div class="wrap colophon__grid mono">
     <p>© 2026 Alex Chadwick</p>
-    <p>Set in Fraunces, Inter Tight and JetBrains Mono, all under the SIL Open Font License. No trackers, no cookies.</p>
+    <p>Set in Big Shoulders Display, Inter Tight, JetBrains Mono and Silkscreen, all under the SIL Open Font License. No trackers, no cookies.</p>
   </div>
 </footer>
 </body>
